@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- allow the html file to find the Javascript file-->
+    <script src ="CSC102 function strings().js" ></script>
+    <script src = "function startSound().js"></script>
+    <link rel = "stylesheet" href = "CSC102String.css">
+    <title>CSC102 String file</title>
+</head>
+<body>
+    <h1> forms and strings</h1>
+    
+    <form id = "strInput" onsubmit = "return false">
+        <!-- these string allow input from the user allowing them to type-->
+        Name: <input type = "text" id = "name" required/>
+        <br>
+        <br>
+        <!--audio control
+        <source src = "music.mp3" type = "audio/mpeg"> </source>
+        </audio>-->
+        <br>
+        String 1: <input type = "text" id = "initString"/>
+        String 2: <input type = "text" id = "2ndString"/>
+        <br>
+        <button id = "startButton" onclick = "startSound()"> Play music</button>
+        <br><br>
+        <button id = "stopButton" onclick = "stopSound()"> Stop music</button>
+        <br>
+        <input type = "submit" onclick = "strings();" id = "submit"/>
+    </form>
+    <!-- display the strings-->
+    <div id = "str1Display"> String1 goes here</div>
+    <div id = "str2Display"> String2 goes here</div>
+    <br>
+    <!-- the result will count the amount of letters in each string and be added together-->>
+    <div id ="strUpdate"> Results goes here</div>
+    <!-- looking for a palindrome-->
+    <div id ="Palindrome"> </div>
+</body>
+</html>
